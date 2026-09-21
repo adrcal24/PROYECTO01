@@ -21,5 +21,18 @@ namespace main
         {
             Console.WriteLine($"Nombre: {Nombre}, Edad: {Edad}");
         }
+
+        // Método para saber si es mayor o menor de edad
+        public void EsMayorDeEdad()
+        {
+            if (Edad >= 18)
+            {
+                Console.WriteLine($"{Nombre} es mayor de edad.");
+            }
+            else
+            {
+                Console.WriteLine($"{Nombre} es menor de edad.");
+            }
+        }
     }
 }
