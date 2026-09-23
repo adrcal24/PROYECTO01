@@ -16,6 +16,29 @@ namespace main
             Edad = edad;
         }
 
+        // Método Getter para obtener la edad
+        public int getEdad()
+        {
+            return Edad;
+        }
+
+        // Método Setter para modificar la edad
+        public int edad
+        {
+            get { return edad; }
+            set
+            {
+                if (value >= 0)
+                {
+                    edad = value;
+                }
+                else
+                {
+                    Console.WriteLine("La edad no puede ser negativa.");
+                }
+            }
+        }
+
         // Método para mostrar datos
         public void MostrarDatos()
         {
