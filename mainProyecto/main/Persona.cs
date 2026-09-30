@@ -22,7 +22,6 @@ namespace main
             return Edad;
         }
 
-        // Método Setter para modificar la edad
         public int edad
         {
             get { return edad; }
@@ -39,7 +38,6 @@ namespace main
             }
         }
 
-        // Método para mostrar datos
         public void MostrarDatos()
         {
             Console.WriteLine($"Nombre: {Nombre}, Edad: {Edad}");
