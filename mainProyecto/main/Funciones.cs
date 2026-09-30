@@ -1,10 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace main
 {
-    internal class Funciones
+    public class Funciones
     {
+        public long CalcularFactorial(int n)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
