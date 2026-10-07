@@ -1,5 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using main;
+using ActividadTDDApp;
 
 namespace TestActividadTDDApp
 {
@@ -24,6 +24,18 @@ namespace TestActividadTDDApp
         public void CalcularFactorial_NumeroPositivo_DevuelveFactorialCorrecto()
         {
             Assert.AreEqual(120, _funciones.CalcularFactorial(5));
+        }
+
+        [TestMethod]
+        [DataRow("", false)]
+        [DataRow(null, false)]
+        [DataRow("abc#123", false)]
+        [DataRow("contraseñavalida1", false)]
+        [DataRow("contraseña#123", true)]
+        public void EsContrasenyaValida_VariosCasos(string contrasenya, bool esperado)
+        {
+            bool resultado = _funciones.EsContrasenyaValida(contrasenya);
+            Assert.AreEqual(esperado, resultado);
         }
     }
 }
